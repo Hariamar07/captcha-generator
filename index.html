@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>captcha generator</title>
+
+
+    <style>
+
+        .main{
+            text-align: center;
+            background-color: rgb(109, 165, 155);
+            height: 300px;
+            width: 400px;
+            margin-left: 550px;
+            margin-top: 200px;
+            border: solid rgb(217, 25, 150) 3px;
+        }
+
+        .box1 img{
+            position: relative;
+            top: 7px;
+            height: 20px;
+            width: 20px;
+            cursor: pointer;
+          
+        }
+
+        .box2 img{
+            position: relative;
+            top: 7px;
+            height: 20px;
+            width: 20px;
+            cursor: pointer;
+        }
+
+        .box2 p{
+            color: red;
+            display: none;
+        }
+      
+    </style>
+   
+
+</head>
+
+
+<body>
+    <div class="main">
+        <div>
+            <h1>Captcha Generator</h1>
+        </div>
+    
+        <div class="box1">
+            <input id="input1" type="placeholder" >
+            <img id="image1" src="./reset_icon_246246 (2).png">
+            
+        </div>
+
+        <br>
+
+        <div class="box2">
+            <input id="input2" type="placeholder">
+            <img id="image2" src="./1904674-accept-approved-check-checked-confirm-done-tick_122524.png">
+            <p id="valid">invalid captcha try again</p>
+        </div>
+
+    </div>
+
+   <script src="index.js"></script>
+  
+</body>
+</html>
